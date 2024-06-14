@@ -8,7 +8,7 @@ https://github.com/dacioms/ProjetScrapADS.git
 
 ```cmake
 python -m venv venv
-venv/Script/Activate
+venv/Scripts/Activate
 pip install -r requirements.txt
 
 ```
