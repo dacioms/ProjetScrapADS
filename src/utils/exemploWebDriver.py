@@ -71,4 +71,13 @@ def main_scraping():
 base_url = "https://www.example.com/jobs"
 # Execução do código
 if __name__ == "__main__":
-    soup = main_scraping()
+    try: 
+        with open("dados.html", "x") as file:
+            file.write(main_scraping)()
+        soup = main_scraping()
+    except:
+        print("O arquivo já existe na pasta")
+        soup = main_scraping()
+    finally:
+        with open("dados.html", "r") as file:
+            soup = file.read()
