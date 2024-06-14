@@ -45,7 +45,7 @@ def get_proxies():
     return proxies
 
 # Função para usar proxies em requisições
-def fetch_url_with_proxy(url, proxies):
+def fetch_url_with_proxy(url, proxies, headers, cookies):
     for proxy in proxies:
         try:
             proxy_url = f"http://{proxy['ip']}:{proxy['port']}"
