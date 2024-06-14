@@ -65,10 +65,10 @@ def main_scraping():
     else:
         print("Failed to fetch the page using proxies.")
     
-    return jobs
+    return soup
 
 
 base_url = "https://www.example.com/jobs"
 # Execução do código
 if __name__ == "__main__":
-    jobs = main_scraping()
+    soup = main_scraping()
