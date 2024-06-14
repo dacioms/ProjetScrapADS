@@ -6,4 +6,11 @@ https://github.com/dacioms/ProjetScrapADS.git
 
 [Link GitHub](https://github.com/dacioms/ProjetScrapADS.git)
 
+```cmake
+python -m venv venv
+venv/Script/Activate
+pip install -r requirements.txt
+
+```
+
 ## Documentação
